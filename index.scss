@@ -1,5 +1,16 @@
 // import fonts here
 
+
+// variables 
+
+//theme colors
+$main: #ddb887;
+$primary: #87acdd;
+$secondary: #457345;
+$error: #d32752;
+$info: #f6c31c;
+$party: #b887dd;
+
 /* reset styles */
 * {
   color: inherit;
@@ -7,6 +18,7 @@
 }
 
 body {
+  background-color: $main;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -29,7 +41,39 @@ img {
 }
 
 h1 {
+  color: $primary;
+  background-color: $primary;
   a {
-    color: rgb(83, 0, 0);
+    color: $secondary;
+    background-color: $secondary;
   }
+}
+
+.main {
+  color: $main;
+  background-color: $main;
+}
+.primary {
+  color: $primary;
+  background-color: $primary;
+}
+
+.secondary {
+  color: $secondary;
+  background-color: $secondary;
+}
+
+.info {
+  color: $info;
+  background-color: $info;
+}
+
+.error {
+  color: $error;
+  background-color: $error;
+}
+
+.party {
+  color: $party;
+  background-color: $party;
 }

@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: #ddb887;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -26,6 +27,41 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  color: #87acdd;
+  background-color: #87acdd;
+}
 h1 a {
-  color: rgb(83, 0, 0);
+  color: #457345;
+  background-color: #457345;
+}
+
+.main {
+  color: #ddb887;
+  background-color: #ddb887;
+}
+
+.primary {
+  color: #87acdd;
+  background-color: #87acdd;
+}
+
+.secondary {
+  color: #457345;
+  background-color: #457345;
+}
+
+.info {
+  color: #f6c31c;
+  background-color: #f6c31c;
+}
+
+.error {
+  color: #d32752;
+  background-color: #d32752;
+}
+
+.party {
+  color: #b887dd;
+  background-color: #b887dd;
 }
