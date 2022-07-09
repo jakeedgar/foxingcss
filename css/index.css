@@ -25,7 +25,7 @@ a {
 
 hr {
   border: 0;
-  border-top: 1px solid #efefef;
+  border-top: 1px solid #402000;
 }
 
 img {
@@ -135,8 +135,8 @@ h6 {
   border-style: solid;
   margin: 0.75rem;
   padding: 0.75rem;
-  border-radius: 0.5rem;
-  border-width: 1px;
+  border-radius: 1.25rem;
+  border-width: 2px;
 }
 
 .notification {
@@ -151,27 +151,40 @@ h6 {
 }
 
 .card {
-  display: block;
+  transition: all 235ms ease 0s;
+  box-shadow: 15px 28px 25px -18px black;
+  margin: 0.75rem;
   padding: 0.75rem;
-  border: 1px solid #0a0c26;
-  box-shadow: 15px 28px 25px -18px hsla(0deg, 0%, 0%, 0.2);
-  margin: 5rem;
-  max-width: 15rem;
+  backface-visibility: hidden;
+  border-style: double;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 0.2083333333rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  will-change: transform;
+  word-wrap: break-word;
+  max-width: 400px;
+  height: 300px;
+}
+.card:hover {
+  transform: translate3d(0, 2px, 0);
+  box-shadow: 2px 8px 8px -5px black;
 }
 .card .card-title {
   font-size: 2rem;
   padding-bottom: 0.75rem;
-  font-weight: bold;
 }
 .card .card-body {
+  margin-top: 0.75rem;
   font-size: 1.15rem;
 }
 .card .card-body a {
   text-decoration: underline;
 }
-
-.card:hover {
-  box-shadow: hsla(0deg, 0%, 0%, 0.3);
+.card .card-hr {
+  border-top: 2px solid #402000;
 }
 
 .button-primary {
@@ -180,7 +193,7 @@ h6 {
   background-color: #69a0e8;
   color: white;
   border: 1;
-  border-radius: 0.5rem;
+  border-radius: 1.25rem;
   padding: 0.75rem;
   width: auto;
   text-align: center;
@@ -196,7 +209,7 @@ h6 {
   cursor: pointer;
   border: 1;
   background-color: #1c5eb6;
-  box-shadow: #191818;
+  box-shadow: 2px 8px 8px -5px black;
 }
 
 .button-primary:active {
