@@ -5,10 +5,16 @@
 
 //theme colors
 $main: #ddb887;
-$primary: #87acdd;
+$text: #402000;
+$text-light: #9A7B4F;
+$text-dark: #2A1506;
+$primary: #69a0e8;
+$primary-light: #6da8f5;
+$primary-dark: #3b5e8b;
 $secondary: #457345;
-$error: #d32752;
-$info: #f6c31c;
+$error: #601125;
+$info: #af7e0b;
+$info-light: #ae9b6e;
 $party: #b887dd;
 
 /* reset styles */
@@ -16,6 +22,8 @@ $party: #b887dd;
   color: inherit;
   margin: 0;
 }
+
+
 
 body {
   background-color: $main;
@@ -42,10 +50,8 @@ img {
 
 h1 {
   color: $primary;
-  background-color: $primary;
   a {
     color: $secondary;
-    background-color: $secondary;
   }
 }
 
@@ -76,4 +82,54 @@ h1 {
 .party {
   color: $party;
   background-color: $party;
+}
+
+.button-primary {
+  position: relative;
+  background-color: $primary;
+  color: $text;
+  border: 1;
+  font-size: 16px;
+  border-radius: .15rem;
+  padding: .5rem;
+  width: auto;
+  text-align: center;
+  align-items: center;
+  -webkit-transition-duration: 0.4s; // safari
+  transition-duration: 4ms;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.button-primary:hover {
+  color: $text-light;
+  cursor: pointer;
+  border: 1;
+  background-color: $primary-dark !important;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+}
+
+.button-primary:active {
+  color: $text-dark;
+  background-color: $primary-light;
+}
+
+.button-primary:after {
+    content: "";
+      background: $primary-light;
+      display: block;
+      position: absolute;
+      padding-top: 300%;
+      padding-left: 300%;
+      margin-left: -20px !important;
+      margin-top: -120%;
+      opacity: 0;
+      transition: all 0.8s
+}
+
+.button-primary:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }

@@ -28,12 +28,10 @@ img {
 }
 
 h1 {
-  color: #87acdd;
-  background-color: #87acdd;
+  color: #69a0e8;
 }
 h1 a {
   color: #457345;
-  background-color: #457345;
 }
 
 .main {
@@ -42,8 +40,8 @@ h1 a {
 }
 
 .primary {
-  color: #87acdd;
-  background-color: #87acdd;
+  color: #69a0e8;
+  background-color: #69a0e8;
 }
 
 .secondary {
@@ -52,16 +50,66 @@ h1 a {
 }
 
 .info {
-  color: #f6c31c;
-  background-color: #f6c31c;
+  color: #af7e0b;
+  background-color: #af7e0b;
 }
 
 .error {
-  color: #d32752;
-  background-color: #d32752;
+  color: #601125;
+  background-color: #601125;
 }
 
 .party {
   color: #b887dd;
   background-color: #b887dd;
+}
+
+.button-primary {
+  position: relative;
+  background-color: #69a0e8;
+  color: #402000;
+  border: 1;
+  font-size: 16px;
+  border-radius: 0.15rem;
+  padding: 0.5rem;
+  width: auto;
+  text-align: center;
+  align-items: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 4ms;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.button-primary:hover {
+  color: #9A7B4F;
+  cursor: pointer;
+  border: 1;
+  background-color: #3b5e8b !important;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+}
+
+.button-primary:active {
+  color: #2A1506;
+  background-color: #6da8f5;
+}
+
+.button-primary:after {
+  content: "";
+  background: #6da8f5;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 300%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.button-primary:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
 }
