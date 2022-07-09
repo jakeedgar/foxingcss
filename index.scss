@@ -17,17 +17,23 @@ $info: #af7e0b;
 $info-light: #ae9b6e;
 $party: #b887dd;
 
+// spacing
+$base-padding: .75rem;
+$base-margin: .75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+$background-image: "./img/background.png";
 /* reset styles */
 * {
   color: inherit;
   margin: 0;
 }
 
-
-
 body {
-  background-color: $main;
   font-family: 'Courier New', Courier, monospace;
+  background-image: url("../img/background.png")
 }
 
 ul {
@@ -77,6 +83,12 @@ h1 {
 .error {
   color: $error;
   background-color: $error;
+}
+
+.notification {
+  color: $secondary;
+  border-color: $secondary;
+  border-style: solid;
 }
 
 .party {
