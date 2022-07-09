@@ -1,3 +1,7 @@
+/**
+  Global foxingcss config
+*/
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* reset styles */
 * {
   color: inherit;
@@ -5,11 +9,9 @@
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
   background-image: url("../img/background.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: auto;
+  color: #402000;
+  font-family: "Courier Prime";
 }
 
 ul {
@@ -31,10 +33,80 @@ img {
 }
 
 h1 {
-  color: #69a0e8;
+  margin: 0;
 }
-h1 a {
-  color: #457345;
+
+button {
+  font-family: "Courier Prime";
+}
+
+html {
+  font-family: "Courier Prime";
+  font-size: 1.15rem;
+}
+
+p,
+a,
+button,
+li,
+table,
+thead,
+tbody,
+th,
+tr,
+td,
+input,
+textarea,
+select,
+option {
+  font-family: "Courier Prime";
+  font-size: 1.15rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier Prime";
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .main {
@@ -48,23 +120,28 @@ h1 a {
 }
 
 .secondary {
-  color: #457345;
-  background-color: #457345;
+  color: #4c5d70;
+  background-color: #4c5d70;
 }
 
 .info {
-  color: #af7e0b;
-  background-color: #af7e0b;
+  color: #006666;
+  background-color: #006666;
 }
 
 .error {
   color: #601125;
-  background-color: #601125;
+  border-color: #601125;
+  border-style: solid;
+  margin: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
 }
 
 .notification {
-  color: #457345;
-  border-color: #457345;
+  color: #4c5d70;
+  border-color: #4c5d70;
   border-style: solid;
 }
 
@@ -73,14 +150,38 @@ h1 a {
   background-color: #b887dd;
 }
 
+.card {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid #0a0c26;
+  box-shadow: 15px 28px 25px -18px hsla(0deg, 0%, 0%, 0.2);
+  margin: 5rem;
+  max-width: 15rem;
+}
+.card .card-title {
+  font-size: 2rem;
+  padding-bottom: 0.75rem;
+  font-weight: bold;
+}
+.card .card-body {
+  font-size: 1.15rem;
+}
+.card .card-body a {
+  text-decoration: underline;
+}
+
+.card:hover {
+  box-shadow: hsla(0deg, 0%, 0%, 0.3);
+}
+
 .button-primary {
+  margin: 0.75rem;
   position: relative;
   background-color: #69a0e8;
-  color: #402000;
+  color: white;
   border: 1;
-  font-size: 16px;
-  border-radius: 0.15rem;
-  padding: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
   width: auto;
   text-align: center;
   align-items: center;
@@ -91,21 +192,21 @@ h1 a {
 }
 
 .button-primary:hover {
-  color: #9A7B4F;
+  color: #ffa040;
   cursor: pointer;
   border: 1;
-  background-color: #3b5e8b !important;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+  background-color: #1c5eb6;
+  box-shadow: #191818;
 }
 
 .button-primary:active {
-  color: #2A1506;
-  background-color: #6da8f5;
+  color: black;
+  background-color: white;
 }
 
 .button-primary:after {
   content: "";
-  background: #6da8f5;
+  background: white;
   display: block;
   position: absolute;
   padding-top: 300%;
