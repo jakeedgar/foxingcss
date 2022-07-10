@@ -6,7 +6,7 @@
 
 body {
   background-image: url("../img/background.png");
-  color: $text;
+  color: $main;
   font-family: $body-font;
 }
 
@@ -21,7 +21,7 @@ a {
 
 hr {
   border: 0;
-  border-top: 1px solid $text;
+  border-top: 1px solid $main;
 }
 
 img {
