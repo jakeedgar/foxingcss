@@ -1,0 +1,82 @@
+/**
+  Global foxingcss config
+*/
+
+// The src for fonts
+$font-src: 'https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+
+// Imports
+@if $font-src {
+  @import url($font-src);
+}
+
+// Set Theme Colors
+$main: #ddb887;
+$text: #402000;
+$primary: #69a0e8;
+$secondary: #4c5d70;
+$success: #457345;
+$error: #601125;
+$warning: #af7e0b;
+$info: #006666;
+$party: #b887dd;
+$light: #acd8ff;
+$dark: #0a0c26;
+
+$color: (
+  "main": $main,
+  "text": $text,
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "error": $error,
+  "warning": $warning,
+  "info": $info,
+  "party": $party,
+  "light": $light,
+  "white": #fff,
+  "black": #000
+);
+
+
+$main-light: lighten($main, 50%);
+$text-light: lighten($text, 50%);
+$primary-light: lighten($primary, 50%);
+$info-light: lighten($info, 50%);
+
+$text-dark: darken($text, 25%);
+$primary-dark: darken($primary, 25%);
+$dark: darken($dark, 25%);
+
+$shadow-color-regular: $dark  !default;
+$shadow-color-hover: $dark !default;
+
+// Font settings
+$global-font-size: 1.15rem !default;
+$global-header-font-size: 2rem !default;
+$header-font: 'Courier Prime' !default;
+$body-font: 'Courier Prime' !default;
+$button-font: 'Courier Prime' !default;
+$font-color: $text !default;
+
+// Responsive breakpoints
+$large-screen: 1200px !default;
+$medium-screen: 992px !default;
+$small-screen: 768px !default;
+$xsmall-screen: 480px !default;
+
+// Sizes for shadows
+
+$shadow-small: 10px 19px 17px -13px $shadow-color-regular !default;
+$shadow-regular: 15px 28px 25px -18px $shadow-color-regular !default;
+$shadow-large: 20px 38px 34px -26px $shadow-color-regular !default;
+$shadow-hover: 2px 8px 8px -5px $shadow-color-hover !default;
+
+
+// spacing
+$base-padding: .75rem;
+$base-margin: .75rem;
+
+// borders
+$base-border-thickness: 2px;
+$base-border-radius: 1.25rem;

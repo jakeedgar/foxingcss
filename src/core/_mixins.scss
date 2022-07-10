@@ -1,0 +1,39 @@
+@mixin translate($x, $y, $z: 0, $transform3d: false) {
+  @if $transform3d {
+    transform: translate3d($x, $y, $z);
+  }
+
+  @else {
+    transform: translate($x, $y);
+  }
+}
+
+@mixin transition($name: all, $duration: 235ms, $animation: ease-in-out, $delay: 0s) {
+  transition: $name $duration $animation $delay;
+}
+
+@mixin shadow($type: regular) {
+  @if $type ==hover {
+    @include translate(0, 2px, 0, true);
+    box-shadow: $shadow-hover;
+  }
+
+  @else if $type ==small {
+    @include transition($animation: ease);
+    box-shadow: $shadow-small;
+  }
+
+  @else if $type ==regular {
+    @include transition($animation: ease);
+    box-shadow: $shadow-regular;
+  }
+
+  @else if $type ==large {
+    @include transition($animation: ease);
+    box-shadow: $shadow-large;
+  }
+
+  @else {
+    @error 'wrong $type. available types: small | regular | large | hover';
+  }
+}
