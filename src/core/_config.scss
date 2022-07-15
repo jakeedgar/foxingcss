@@ -34,6 +34,7 @@ $color: (
   "info": $info,
   "party": $party,
   "light": $light,
+  "dark": $dark,
   "white": #fff,
   "black": #000
 );
@@ -63,12 +64,6 @@ $font-size-sm: $base-font-size * 0.75;
 $font-size-lg: $base-font-size * 1.5;
 $font-size-xl: $base-font-size * 2;
 $font-size-xxl: $base-font-size * 3;
-
-// Responsive breakpoints
-$large-screen: 1200px !default;
-$medium-screen: 992px !default;
-$small-screen: 768px !default;
-$xsmall-screen: 480px !default;
 
 // Sizes for shadows
 

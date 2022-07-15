@@ -5,9 +5,24 @@
 }
 
 body {
-  background-image: url("../img/background.png");
+  animation: scroll 50s linear infinite;
+  width: 100%;
+  perspective: 1000px;
+  background-image: url("../img/background-light.png");
   color: $main;
   font-family: $body-font;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 100s linear infinite;
+  }
 }
 
 ul {
