@@ -1,0 +1,29 @@
+@use "sass:math";
+
+$flex-grid-columns: 12;
+
+// base layout classes
+.container-flex {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.row-flex {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+// column classes
+@include xs {
+  @for $i from 1 through $flex-grid-columns {
+    .col-#{$i}-xs {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $flex-grid-columns);
+    }
+  }
+}
