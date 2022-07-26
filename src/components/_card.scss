@@ -8,17 +8,19 @@
   border-style: double;
   border-width: $base-border-thickness;
   border-color: $text-dark;
-  border-radius: math.div($base-border-radius, 6);
+  border-radius: math.div($base-border-radius, 4);
   display: flex;
   flex-direction: column;
   position: relative;
   will-change: transform;
   word-wrap: break-word;
-  max-width: 400px;
-  height: 300px;
 
   &:hover {
     @include shadow(hover);
+  }
+
+  .card-hr {
+    border-top: 2px solid $main;
   }
 
   .card-title {
@@ -27,15 +29,13 @@
   }
 
   .card-body {
+    @extend .card-hr;
     margin-top: $base-margin;
+    padding-top: $base-padding * 2;
     font-size: $global-font-size;
 
     a {
-      text-decoration: underline;
+      text-decoration: none;
     }
-  }
-
-  .card-hr {
-    border-top: 2px solid $main;
   }
 }

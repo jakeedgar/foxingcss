@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+
+// foxing css core
+@import 'core/config';
+@import 'core/breakpoints';
+@import 'core/colors';
+@import 'core/mixins';
+@import 'core/functions';
+@import 'core/reset';
+
+// content
+@import 'content/fonts';
+
+// layout
+@import 'layout/container';
+@import 'layout/flex-grid';
+
+//utilities
+@import 'utilities/utilities';
+
+// components
+@import 'components/card';
+@import 'components/buttons';
+@import 'components/fancy-box';
+@import 'components/navbar';

@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+.box {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: $base;
+  width: 100%;
+  max-width: 600px;
+  padding: 5px;
+  border: 2px solid $main;
+
+  &:before,
+  &:after {
+    content: "•";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: $main;
+    border: 2px solid $main;
+    line-height: 12px;
+    top: 5px;
+    text-align: center;
+  }
+
+  &:before {
+    left: 5px;
+  }
+
+  &:after {
+    right: 5px;
+  }
+
+  .box-title {
+    margin-left: 2rem;
+  }
+
+  .box-inner {
+    text-align: left;
+    position: relative;
+    border: 2px solid $main;
+    padding: 40px;
+
+    &:before,
+    &:after {
+      content: "•";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      font-size: 14px;
+      color: $main;
+      border: 2px solid $main;
+      line-height: 12px;
+      bottom: -2px;
+      text-align: center;
+    }
+
+    &:before {
+      left: -2px;
+    }
+
+    &:after {
+      right: -2px;
+    }
+  }
+}

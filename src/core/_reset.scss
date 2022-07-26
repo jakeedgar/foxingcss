@@ -5,10 +5,8 @@
 }
 
 body {
-  animation: scroll 50s linear infinite;
-  width: 100%;
-  perspective: 1000px;
-  background-image: url("../img/background-light.png");
+  background-color: lighten($base, 10%);
+  // box-shadow: 0 0 4px rgba(0, 0, 0, 0.3), 0 0 300px 30px $base inset;
   color: $main;
   font-family: $body-font;
 }
