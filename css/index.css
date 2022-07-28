@@ -25,7 +25,7 @@
 }
 @media (min-width: 1200px) {
   .responsive-text {
-    color: #006D5B;
+    color: #006d5b;
   }
 }
 
@@ -942,15 +942,15 @@
 }
 
 .text-success {
-  color: #006D5B;
+  color: #006d5b;
 }
 
 .text-hover-success:hover {
-  color: #006D5B;
+  color: #006d5b;
 }
 
 .bg-success {
-  background-color: #006D5B;
+  background-color: #006d5b;
 }
 
 .text-success-light-1 {
@@ -3634,7 +3634,7 @@ h6 {
   border: 0;
   padding: 0.75rem 1.5rem;
   border-radius: 1.25rem;
-  background-color: #006D5B;
+  background-color: #006d5b;
 }
 .btn-success:hover {
   background-color: #00a086;
@@ -3648,10 +3648,10 @@ h6 {
   padding: 0.75rem 1.5rem;
   border-radius: 1.25rem;
   background-color: #ddb887;
-  border: 2px solid #006D5B;
+  border: 2px solid #006d5b;
 }
 .btn-outlined-success:hover {
-  background-color: #006D5B;
+  background-color: #006d5b;
 }
 
 .btn-complement-success {
@@ -3661,11 +3661,11 @@ h6 {
   border: 0;
   padding: 0.75rem 1.5rem;
   border-radius: 1.25rem;
-  background-color: #006D5B;
+  background-color: #006d5b;
   color: #ff0730;
 }
 .btn-complement-success:hover {
-  color: #006D5B;
+  color: #006d5b;
   background-color: #ff0730;
 }
 
@@ -4093,7 +4093,8 @@ h6 {
 .navbar li, .navbar-black li, .navbar-white li, .navbar-dark li, .navbar-light li, .navbar-party li, .navbar-info li, .navbar-warning li, .navbar-error li, .navbar-success li, .navbar-secondary li, .navbar-primary li, .navbar-main li, .navbar-base li {
   float: left;
 }
-.navbar a, .navbar-black a, .navbar-white a, .navbar-dark a, .navbar-light a, .navbar-party a, .navbar-info a, .navbar-warning a, .navbar-error a, .navbar-success a, .navbar-secondary a, .navbar-primary a, .navbar-main a, .navbar-base a, .navbar li a {
+.navbar a, .navbar-black a, .navbar-white a, .navbar-dark a, .navbar-light a, .navbar-party a, .navbar-info a, .navbar-warning a, .navbar-error a, .navbar-success a, .navbar-secondary a, .navbar-primary a, .navbar-main a, .navbar-base a,
+.navbar li a {
   display: block;
   text-align: center;
   padding: 1.5rem;
@@ -4123,7 +4124,7 @@ h6 {
 }
 
 .navbar-success {
-  background-color: #006D5B;
+  background-color: #006d5b;
 }
 
 .navbar-error {
@@ -4179,14 +4180,16 @@ h6 {
 .navbar-hero li a {
   display: block;
   text-align: center;
-  padding: 1.5rem;
   text-decoration: none;
+  padding: 3.3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .navbar-hero li a:hover, .navbar-hero-black li a:hover, .navbar-hero-white li a:hover, .navbar-hero-dark li a:hover, .navbar-hero-light li a:hover, .navbar-hero-party li a:hover, .navbar-hero-info li a:hover, .navbar-hero-warning li a:hover, .navbar-hero-error li a:hover, .navbar-hero-success li a:hover, .navbar-hero-secondary li a:hover, .navbar-hero-primary li a:hover, .navbar-hero-main li a:hover, .navbar-hero-base li a:hover {
-  background-color: #151a51;
+  background-color: #00758b;
 }
 .navbar-hero li a:active, .navbar-hero-black li a:active, .navbar-hero-white li a:active, .navbar-hero-dark li a:active, .navbar-hero-light li a:active, .navbar-hero-party li a:active, .navbar-hero-info li a:active, .navbar-hero-warning li a:active, .navbar-hero-error li a:active, .navbar-hero-success li a:active, .navbar-hero-secondary li a:active, .navbar-hero-primary li a:active, .navbar-hero-main li a:active, .navbar-hero-base li a:active {
-  background-color: #202679;
+  background-color: #008aa5;
 }
 
 .navbar-hero-base {
@@ -4206,7 +4209,7 @@ h6 {
 }
 
 .navbar-hero-success {
-  background-color: #006D5B;
+  background-color: #006d5b;
 }
 
 .navbar-hero-error {
@@ -4262,14 +4265,16 @@ h6 {
 .navbar-hero-big li a {
   display: block;
   text-align: center;
-  padding: 1.5rem;
+  padding: 5.25rem;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
   text-decoration: none;
 }
 .navbar-hero-big li a:hover, .navbar-hero-big-black li a:hover, .navbar-hero-big-white li a:hover, .navbar-hero-big-dark li a:hover, .navbar-hero-big-light li a:hover, .navbar-hero-big-party li a:hover, .navbar-hero-big-info li a:hover, .navbar-hero-big-warning li a:hover, .navbar-hero-big-error li a:hover, .navbar-hero-big-success li a:hover, .navbar-hero-big-secondary li a:hover, .navbar-hero-big-primary li a:hover, .navbar-hero-big-main li a:hover, .navbar-hero-big-base li a:hover {
-  background-color: #151a51;
+  background-color: #5392e5;
 }
 .navbar-hero-big li a:active, .navbar-hero-big-black li a:active, .navbar-hero-big-white li a:active, .navbar-hero-big-dark li a:active, .navbar-hero-big-light li a:active, .navbar-hero-big-party li a:active, .navbar-hero-big-info li a:active, .navbar-hero-big-warning li a:active, .navbar-hero-big-error li a:active, .navbar-hero-big-success li a:active, .navbar-hero-big-secondary li a:active, .navbar-hero-big-primary li a:active, .navbar-hero-big-main li a:active, .navbar-hero-big-base li a:active {
-  background-color: #202679;
+  background-color: #3d84e1;
 }
 
 .navbar-hero-big-base {
@@ -4289,7 +4294,7 @@ h6 {
 }
 
 .navbar-hero-big-success {
-  background-color: #006D5B;
+  background-color: #006d5b;
 }
 
 .navbar-hero-big-error {
@@ -4324,7 +4329,7 @@ h6 {
   background-color: #000;
 }
 
-.textfield {
+input[type=textarea] {
   background-color: inherit;
   outline: none;
   margin-bottom: 0.5rem;
@@ -4355,7 +4360,7 @@ h6 {
 }
 
 .field-width-max {
-  padding-right: 85%;
+  padding-right: 75%;
 }
 
 .field-depth {
@@ -4384,4 +4389,237 @@ h6 {
 
 .field-depth-max {
   padding-bottom: 50%;
+}
+
+.container-check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: black;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+input[type=checkbox],
+.checkmark-secondary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #61768e;
+  /* prettier-ignore */
+}
+input[type=checkbox]:hover,
+.checkmark-secondary:hover {
+  background-color: #232b33;
+}
+input[type=checkbox] .container input:checked ~ .checkmark-secondary,
+.checkmark-secondary .container input:checked ~ .checkmark-secondary {
+  background-color: black;
+}
+input[type=checkbox]:after,
+.checkmark-secondary:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark-secondary:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark-secondary:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input[type=checkbox],
+.checkmark-primary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #69a0e8;
+}
+input[type=checkbox]:hover,
+.checkmark-primary:hover {
+  background-color: #1f6acc;
+}
+input[type=checkbox] .container input:checked ~ .checkmark-primary,
+.checkmark-primary .container input:checked ~ .checkmark-primary {
+  background-color: black;
+}
+input[type=checkbox]:after,
+.checkmark-primary:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark-primary:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark-primary:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input[type=checkbox][disabled],
+.checkmark-error {
+  cursor: not-allowed;
+}
+
+input[type=checkbox],
+.checkmark-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #601125;
+}
+input[type=checkbox]:hover,
+.checkmark-error:hover {
+  background-color: #090204;
+}
+input[type=checkbox] .container input:checked ~ .checkmark-error,
+.checkmark-error .container input:checked ~ .checkmark-error {
+  background-color: #f9f3ea;
+}
+input[type=checkbox]:after,
+.checkmark-error:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark-error:after {
+  display: block;
+}
+
+.container .checkmark-error:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #ddb887;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #402000;
+  border-radius: 25%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
+  background-color: #733a00;
+}
+
+.radio-container input:checked ~ .checkmark {
+  background-color: black;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 25%;
+  background: white;
+}
+
+.line {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  border: 0;
+  border-top: 2px solid #402000;
+  width: 80%;
+  margin: auto;
+}
+.line .wide-line {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  border: 0;
+  border-top: 2px solid #402000;
+  margin: auto;
+  width: 100%;
 }

@@ -8,12 +8,12 @@
 
 .navbar {
   @extend %flex-layout;
-  padding: $base-padding, $base-padding*2;
+  padding: $base-padding, $base-padding * 2;
 
   .site-title {
-      font-size: $font-size-xxl;
-      font-style: bold;
-    }
+    font-size: $font-size-xxl;
+    font-style: bold;
+  }
   .container {
     @extend %flex-layout;
   }
@@ -29,12 +29,13 @@
     float: left;
   }
 
-  a, li a {
+  a,
+  li a {
     display: block;
     text-align: center;
-    padding: $base-padding*2;
+    padding: $base-padding * 2;
     text-decoration: none;
-    }
+  }
 
   li a:hover {
     background-color: lighten($dark, 20%);
@@ -54,7 +55,7 @@
 
 .navbar-hero {
   @extend %flex-layout;
-  padding: $base-padding, $base-padding*2;
+  padding: $base-padding, $base-padding * 2;
   height: 8rem;
 
   .site-title {
@@ -81,21 +82,22 @@
   li a {
     display: block;
     text-align: center;
-    padding: $base-padding*2;
     text-decoration: none;
+    padding: $base-padding * 4.4;
+    padding-left: $base-padding * 2;
+    padding-right: $base-padding * 2;
   }
 
   li a:hover {
-    background-color: lighten($dark, 20%);
+    background-color: lighten($info, 10%);
   }
 
   li a:active {
-    background-color: lighten($dark, 30%);
+    background-color: lighten($info, 15%);
   }
 }
 
-@each $key,
-$value in $color {
+@each $key, $value in $color {
   .navbar-hero-#{$key} {
     @extend .navbar-hero;
     background-color: $value;
@@ -104,7 +106,7 @@ $value in $color {
 
 .navbar-hero-big {
   @extend %flex-layout;
-  padding: $base-padding, $base-padding*2;
+  padding: $base-padding, $base-padding * 2;
   height: 12rem;
 
   .site-title {
@@ -131,21 +133,22 @@ $value in $color {
   li a {
     display: block;
     text-align: center;
-    padding: $base-padding*2;
+    padding: $base-padding * 7;
+    padding-left: $base-padding * 3;
+    padding-right: $base-padding * 3;
     text-decoration: none;
   }
 
   li a:hover {
-    background-color: lighten($dark, 20%);
+    background-color: darken($primary, 5%);
   }
 
   li a:active {
-    background-color: lighten($dark, 30%);
+    background-color: darken($primary, 10%);
   }
 }
 
-@each $key,
-$value in $color {
+@each $key, $value in $color {
   .navbar-hero-big-#{$key} {
     @extend .navbar-hero-big;
     background-color: $value;

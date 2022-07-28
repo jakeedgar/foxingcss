@@ -1,6 +1,5 @@
 @charset 'UTF-8';
 
-
 // foxing css core
 @import 'core/config';
 @import 'core/breakpoints';
@@ -25,3 +24,6 @@
 @import 'components/fancy-box';
 @import 'components/navbar';
 @import 'components/form';
+@import 'components/checkbox';
+@import 'components/radiobutton';
+@import 'components/line';

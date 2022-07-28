@@ -1,0 +1,142 @@
+.container-check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: $dark;
+}
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+input[type='checkbox'],
+.checkmark-secondary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: lighten($secondary, 10%);
+  &:hover {
+    background-color: darken($secondary, 20%);
+  }
+  .container input:checked ~ .checkmark-secondary {
+    background-color: $dark;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  /* prettier-ignore */
+  @debug()
+}
+
+.container input:checked ~ .checkmark-secondary:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark-secondary:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid lighten($light, 20%);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input[type='checkbox'],
+.checkmark-primary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: $primary;
+  &:hover {
+    background-color: darken($primary, 20%);
+  }
+  .container input:checked ~ .checkmark-primary {
+    background-color: $dark;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+}
+
+.container input:checked ~ .checkmark-primary:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark-primary:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid darken($dark, 20%);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input[type='checkbox'][disabled],
+.checkmark-error {
+  cursor: not-allowed;
+}
+
+input[type='checkbox'],
+.checkmark-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: $error;
+  &:hover {
+    background-color: darken($error, 20%);
+  }
+  .container input:checked ~ .checkmark-error {
+    background-color: $base-light;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+}
+
+.container input:checked ~ .checkmark-error:after {
+  display: block;
+}
+
+.container .checkmark-error:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid $base;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

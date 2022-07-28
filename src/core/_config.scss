@@ -3,7 +3,7 @@
 */
 
 // The src for fonts
-$font-src: 'https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+$font-src: "https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap";
 
 // Imports
 @if $font-src {
@@ -15,7 +15,7 @@ $base: #ddb887;
 $main: #402000;
 $primary: #69a0e8;
 $secondary: #4c5d70;
-$success: #006D5B;
+$success: #006d5b;
 $error: #601125;
 $warning: #af7e0b;
 $info: #004a58;
@@ -36,28 +36,28 @@ $color: (
   "light": $light,
   "dark": $dark,
   "white": #fff,
-  "black": #000
+  "black": #000,
 );
-
 
 $main-light: lighten($base, 50%);
 $text-light: lighten($main, 50%);
 $primary-light: lighten($primary, 50%);
 $info-light: lighten($info, 50%);
+$base-light: lighten($base, 25%);
 
 $text-dark: darken($main, 25%);
 $primary-dark: darken($primary, 25%);
 $dark: darken($dark, 25%);
 
-$shadow-color-regular: $dark  !default;
+$shadow-color-regular: $dark !default;
 $shadow-color-hover: $dark !default;
 
 // Font settings
 $global-font-size: 1.15rem !default;
 $global-header-font-size: 2rem !default;
-$header-font: 'Courier Prime' !default;
-$body-font: 'Courier Prime' !default;
-$button-font: 'Courier Prime' !default;
+$header-font: "Courier Prime" !default;
+$body-font: "Courier Prime" !default;
+$button-font: "Courier Prime" !default;
 $font-color: $main !default;
 $base-font-size: 1rem !default;
 $font-size-sm: $base-font-size * 0.75;
@@ -72,10 +72,9 @@ $shadow-regular: 15px 28px 25px -18px $shadow-color-regular !default;
 $shadow-large: 20px 38px 34px -26px $shadow-color-regular !default;
 $shadow-hover: 2px 8px 8px -5px $shadow-color-hover !default;
 
-
 // spacing
-$base-padding: .75rem;
-$base-margin: .75rem;
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
 
 // borders
 $base-border-thickness: 2px;

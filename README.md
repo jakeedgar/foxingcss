@@ -1,26 +1,29 @@
-## f o x i n g  &nbsp; &nbsp;  c s s
+## f o x i n g &nbsp; &nbsp; c s s
 
-* A custom CSS library built for aesthetically stubborn users obsessed with nostalgia. 
-  * By: Jake Edgar
+- A custom CSS library built for aesthetically stubborn users obsessed with nostalgia.
+  - By: Jake Edgar
 
 ## Description
 
-* Stuff about it here. 
+- I designed this css library with the hopes of opening it up to the open source community and building something a bit niche, but valuable and effective.
 
 ## Technology Used
 
-* SCSS
-* CSS
-* HTML5
+- HTML
+- SCSS
+- CSS
+- gulp
+- prettier
 
 ## Installation Instructions
-* Install!
+
+- Install!
 
 ## Known Bugs
 
-* There are no Known Bugs at this time. 
+- The package has not yet been launched so installation is not fully functional yet.
+- The checkbox only displays a "not allowed" cursor if you manually force it to.
 
 ## License
 
-Licensed under the [MIT License](LICENSE).
-Copyright (c) 2022 Jake Edgar.
+Licensed under the [MIT License](LICENSE). Copyright (c) 2022 Jake Edgar.
