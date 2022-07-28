@@ -51,3 +51,103 @@
     background-color: $value;
   }
 }
+
+.navbar-hero {
+  @extend %flex-layout;
+  padding: $base-padding, $base-padding*2;
+  height: 8rem;
+
+  .site-title {
+    font-size: $font-size-xxl;
+    font-style: bold;
+  }
+
+  .container {
+    @extend %flex-layout;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: left;
+  }
+
+  a,
+  li a {
+    display: block;
+    text-align: center;
+    padding: $base-padding*2;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: lighten($dark, 20%);
+  }
+
+  li a:active {
+    background-color: lighten($dark, 30%);
+  }
+}
+
+@each $key,
+$value in $color {
+  .navbar-hero-#{$key} {
+    @extend .navbar-hero;
+    background-color: $value;
+  }
+}
+
+.navbar-hero-big {
+  @extend %flex-layout;
+  padding: $base-padding, $base-padding*2;
+  height: 12rem;
+
+  .site-title {
+    font-size: $font-size-xxl;
+    font-style: bold;
+  }
+
+  .container {
+    @extend %flex-layout;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: left;
+  }
+
+  a,
+  li a {
+    display: block;
+    text-align: center;
+    padding: $base-padding*2;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: lighten($dark, 20%);
+  }
+
+  li a:active {
+    background-color: lighten($dark, 30%);
+  }
+}
+
+@each $key,
+$value in $color {
+  .navbar-hero-big-#{$key} {
+    @extend .navbar-hero-big;
+    background-color: $value;
+  }
+}
