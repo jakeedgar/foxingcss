@@ -3,7 +3,7 @@
 */
 
 // The src for fonts
-$font-src: "https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap";
+$font-src: 'https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap';
 
 // Imports
 @if $font-src {
@@ -24,19 +24,19 @@ $light: #acd8ff;
 $dark: #0a0c26;
 
 $color: (
-  "base": $base,
-  "main": $main,
-  "primary": $primary,
-  "secondary": $secondary,
-  "success": $success,
-  "error": $error,
-  "warning": $warning,
-  "info": $info,
-  "party": $party,
-  "light": $light,
-  "dark": $dark,
-  "white": #fff,
-  "black": #000,
+  'base': $base,
+  'main': $main,
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'error': $error,
+  'warning': $warning,
+  'info': $info,
+  'party': $party,
+  'light': $light,
+  'dark': $dark,
+  'white': #fff,
+  'black': #000
 );
 
 $main-light: lighten($base, 50%);
@@ -55,9 +55,9 @@ $shadow-color-hover: $dark !default;
 // Font settings
 $global-font-size: 1.15rem !default;
 $global-header-font-size: 2rem !default;
-$header-font: "Courier Prime" !default;
-$body-font: "Courier Prime" !default;
-$button-font: "Courier Prime" !default;
+$header-font: 'Courier Prime' !default;
+$body-font: 'Courier Prime' !default;
+$button-font: 'Courier Prime' !default;
 $font-color: $main !default;
 $base-font-size: 1rem !default;
 $font-size-sm: $base-font-size * 0.75;
@@ -78,6 +78,6 @@ $base-margin: 0.75rem;
 
 // borders
 $base-border-thickness: 2px;
-$base-border-radius: 1.25rem;
+$base-border-radius: 0.4rem;
 
 // textfield

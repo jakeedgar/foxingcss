@@ -1,6 +1,7 @@
 @use 'sass:math';
 
 $base-width: 6.25rem;
+$base-depth: 1rem;
 
 input[type='textarea'] {
   background-color: inherit;
@@ -9,28 +10,32 @@ input[type='textarea'] {
 }
 
 $formValues: (
-  'padding-right': (
+  'width': (
     'prefix': 'field-width',
     'values': (
-      'default': $base-padding,
-      '0': 0,
+      'default': $base-width,
       '1': $base-width,
       '2': $base-width * 2,
       '3': $base-width * 3,
       '4': $base-width * 4,
-      'max': 75%
+      '5': $base-width * 5,
+      'full': 100%
     )
   ),
   'padding-bottom': (
     'prefix': 'field-depth',
     'values': (
       'default': $base-padding,
-      '0': 0,
-      '1': $base-width,
-      '2': $base-width * 1.25,
-      '3': $base-width * 2,
-      '4': $base-width * 2.5,
-      'max': 50%
+      '1': $base-depth,
+      '2': $base-depth * 2,
+      '3': $base-depth * 3,
+      '4': $base-depth * 4,
+      '5': $base-depth * 5,
+      '6': $base-depth * 6,
+      '7': $base-depth * 7,
+      '8': $base-depth * 8,
+      '9': $base-depth * 9,
+      '10': $base-depth * 10
     )
   )
 );

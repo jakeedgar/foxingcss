@@ -11,10 +11,10 @@
 .btn {
   @include btn;
   &:hover {
-      background-color: lighten(#aaa6a1, 10%);
-      border: 1.25px solid #000;
-    }
-  border: 1px solid #000;
+    background-color: lighten(#aaa6a1, 10%);
+    border: 1.25px solid $dark;
+  }
+  border: 1px solid $dark;
 }
 @each $key, $value in $color {
   .btn-#{$key} {
@@ -27,17 +27,35 @@
   .btn-outlined-#{$key} {
     @include btn($base);
     &:hover {
-        background-color: $value;
-      }
-    border: $base-border-thickness solid $value;
+      background-color: $value;
+    }
+    border: $base-border-thickness solid darken($value, 10%);
   }
 
   .btn-complement-#{$key} {
     @include btn($value);
-      color: light-comp($value);
+    color: light-comp($value);
     &:hover {
       color: $value;
       background-color: light-comp($value);
+    }
+  }
+
+  .btn-simple {
+    @include btn($value);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.4rem;
+    background-color: inherit;
+    border: 2px solid #000;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    box-shadow: 1px 1px 1px darken($value, 25%);
+    &:hover {
+      box-shadow: 2px 2px 2px darken($value, 25%);
+    }
+    &:active {
+      box-shadow: 3px 3px 3px darken($value, 25%);
     }
   }
 }
